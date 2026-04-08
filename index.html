@@ -1448,10 +1448,10 @@ Return ONLY valid JSON in this exact format, no prose:
 }
 Use authentic Indian foods appropriate for ${u.region} cuisine and the health conditions. All 7 days must be included. Ensure caloric accuracy. Focus on condition-specific guidelines.`;
 
-  try {
+  try 
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true','x-api-key':'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'},
+      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true','x-api-key':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
       body: JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:4000,
@@ -1666,7 +1666,7 @@ async function loadDashboardInsight() {
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true','x-api-key':'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'},
+      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true','x-api-key':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,
       body:JSON.stringify({model:'claude-sonnet-4-20250514', max_tokens:200, messages:[{role:'user',content:prompt}]})
     });
     const d = await res.json();
@@ -1824,7 +1824,7 @@ async function analyseImage(base64, mediaType) {
         'Content-Type': 'application/json',
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true',
-        'x-api-key': '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'
+        'x-api-key': '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'
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
@@ -1909,7 +1909,7 @@ async function searchFood() {
         'Content-Type': 'application/json',
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true',
-        'x-api-key': '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'
+        'x-api-key': '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'
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
@@ -2160,7 +2160,7 @@ async function submitAIQuestion() {
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true','x-api-key':'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'},
+      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true','x-api-key':'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'},
       body:JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:400,
