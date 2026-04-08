@@ -1823,7 +1823,7 @@ async function analyseImage(base64, mediaType) {
       headers: {
         'Content-Type': 'application/json',
         'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
+        'anthropic-dangerous-direct-browser-access': 'true',         'x-api-key': 'sk-ant-api03-YOUR-KEY-HERE'
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
@@ -1907,7 +1907,7 @@ async function searchFood() {
       headers: {
         'Content-Type': 'application/json',
         'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
+        'anthropic-dangerous-direct-browser-access': 'true',         'x-api-key': 'sk-ant-api03-YOUR-KEY-HERE'
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
